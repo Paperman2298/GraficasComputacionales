@@ -27,14 +27,14 @@ scene.add(torus);
 
 // Icosaedro
 const threadGeometry = new THREE.TorusKnotGeometry(3, 1, 100, 16);
-const threadMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff, wireframe: true });
+const threadMaterial = new THREE.MeshStandardMaterial({ color: 0xffa500, wireframe: true });
 const threadTexture = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('sun.jpg') })
 const thread = new THREE.Mesh(threadGeometry, threadMaterial);
 scene.add(thread);
 
 // Light
-const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(5, 5, 5)
+const pointLight = new THREE.PointLight(0xffA500);
+pointLight.position.set(0, 0, 0)
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight)
@@ -60,6 +60,28 @@ Array(500).fill().forEach(addStar)
 
 const spaceTexture = new THREE.TextureLoader().load('black.jpg');
 scene.background = spaceTexture;
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    torus.rotation.x += 0.01;
+    torus.rotation.y += 0.01;
+    torus.rotation.z += 0.01;
+
+    // torus.position.x += 0.1;
+    // torus.position.y += 0.1;
+    // torus.position.z += 0.1;
+
+    console.log(torus.position)
+
+
+    controls.update();
+
+
+    renderer.render(scene, camera);
+}
+
+animate()
 
 // Avatar 
 // const sunTexture = new THREE.TextureLoader().load('sun.jpg');
@@ -106,18 +128,3 @@ scene.background = spaceTexture;
 
 // document.body.onscroll = moveCamera;
 // moveCamera();
-
-function animate() {
-    requestAnimationFrame(animate);
-
-    torus.rotation.x += 0.01;
-    torus.rotation.y += 0.01;
-    torus.rotation.z += 0.01;
-
-    controls.update();
-
-
-    renderer.render(scene, camera);
-}
-
-animate()
