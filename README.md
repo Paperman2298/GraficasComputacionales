@@ -1,6 +1,7 @@
 # Proyecto de Gráficas Computacionales
 
-Descripción del proyecto
+Descripción del proyecto:
+Simularemos la galaxia utilizando three.js en donde incorporaremos distintos planetas con cierto movimiento y estrellas hechas con figuras primitivas a base de vectores
 
 ## Instalación y uso
 **Windows**
