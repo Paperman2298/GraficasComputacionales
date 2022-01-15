@@ -11,7 +11,6 @@ figuras compuestas y además:
 
 • La escena tendrá al menos una animación con algún control interactivo
 
-En siguientes etapas.
 
 ## Instalación y uso
 **Windows**
