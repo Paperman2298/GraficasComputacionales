@@ -7,9 +7,11 @@ Se simulará una galaxia utilizando la librería three.js en donde se incorporar
 El proyecto se compondrá en programar una escena con la librería three.js a base de 
 figuras compuestas y además:  
 
-• La escena tendrá al menos 2 texturas, una luz así como sombras 
+• La escena tendrá al menos 2 texturas, luces así como sombras 
 
 • La escena tendrá al menos una animación con algún control interactivo
+
+En siguientes etapas.
 
 ## Instalación y uso
 **Windows**
