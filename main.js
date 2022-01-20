@@ -57,18 +57,18 @@ const venus = createCircle(5.8, venusPath,0,44,0,0);
 const earth = createCircle(6,earthPath,0,62,0,0);
 const mars = createCircle(4,marsPath,0,78,0,0);
 const jupiter  = createCircle(12,jupiterPath,0,100,0,0);
-const neptuno  = createCircle(7,neptunePath,0,110,0,0);
-const pluton = createCircle(2.8, plutonPath,0,130,0,0);
+const neptuno  = createCircle(7,neptunePath,0,200,0,0);
+const pluton = createCircle(2.8, plutonPath,0,216,0,0);
 const saturno = createCircle(10, saturnPath, {
     innerRadius: 10,
     outerRadius: 20,
     texture: saturnRingPath
-}, 34.5, 0, 0);
+}, 138, 0, 0);
 const uranus = createCircle(7, uranusPath, {
     innerRadius: 7,
     outerRadius: 12,
     texture: uranusRingPath
-}, 88.5, 0, 0);
+}, 176, 0, 0);
 // Fin de creación de planetas
 function createCircle(tamanio, textura, anillo, x, y, z) {
     const geo = new THREE.SphereGeometry(tamanio, 30, 30);
