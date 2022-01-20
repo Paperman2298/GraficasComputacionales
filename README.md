@@ -30,6 +30,11 @@ npm run dev
 yarn install vite@latest
 ```
 
+## Avances
+
+**Primer avance**
+
+
 ## Equipo
 Joel Fernando Santillán Santana - A01634748
 
