@@ -26,49 +26,36 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 renderer.render(scene, camera); // Draw
+
 const textureLoader = new THREE.TextureLoader();
-// Torus
-//const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-/*const material = new THREE.MeshStandardMaterial({
-    color: 0xADD8F6,
-    wireframe: true
-});*/
-//const torus = new THREE.Mesh(geometry, material);
-// Icosaedro
-//const threadGeometry = new THREE.TorusKnotGeometry(3, 1, 100, 16);
-/*const threadMaterial = new THREE.MeshStandardMaterial({
-    color: 0xffa500,
-    wireframe: true
-});*/
-/*const threadTexture = new THREE.MeshBasicMaterial({
-    map: new THREE.TextureLoader().load(sunPath)
-})*/
-//const thread = new THREE.Mesh(threadGeometry, threadMaterial);
-// Sun
 const sunGeo = new THREE.SphereGeometry(10, 32, 16);
 const sunTex = new THREE.MeshBasicMaterial({
     map: new THREE.TextureLoader().load(sunPath)
 });
 const sun = new THREE.Mesh(sunGeo, sunTex);
 scene.add(sun);
+
 // Creacion de planetas
-const mercurio = createCircle(3.2, mercuryPath, 0, 28, 0, 0);
-const venus = createCircle(5.8, venusPath, 0, 44, 0, 0);
-const earth = createCircle(6, earthPath, 0, 62, 0, 0);
-const mars = createCircle(4, marsPath, 0, 78, 0, 0);
-const jupiter = createCircle(12, jupiterPath, 0, 100, 0, 0);
-const neptuno = createCircle(7, neptunePath, 0, 110, 0, 0);
-const pluton = createCircle(2.8, plutonPath, 0, 130, 0, 0);
+
+const mercurio = createCircle(3.2, mercuryPath,0,28,0,0);
+const venus = createCircle(5.8, venusPath,0,44,0,0);
+const earth = createCircle(6,earthPath,0,62,0,0);
+const mars = createCircle(4,marsPath,0,78,0,0);
+const jupiter  = createCircle(12,jupiterPath,0,100,0,0);
+const neptuno  = createCircle(7,neptunePath,0,200,0,0);
+const pluton = createCircle(2.8, plutonPath,0,216,0,0);
+
 const saturno = createCircle(10, saturnPath, {
     innerRadius: 10,
     outerRadius: 20,
     texture: saturnRingPath
-}, 34.5, 0, 0);
+}, 138, 0, 0);
 const uranus = createCircle(7, uranusPath, {
     innerRadius: 7,
     outerRadius: 12,
     texture: uranusRingPath
-}, 88.5, 0, 0);
+}, 176, 0, 0);
+
 // Fin de creación de planetas
 function createCircle(tamanio, textura, anillo, x, y, z) {
     const geo = new THREE.SphereGeometry(tamanio, 30, 30);
@@ -105,11 +92,14 @@ const pointLight = new THREE.PointLight(0xffA500);
 pointLight.position.set(0, 0, 0)
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight)
+
 const lightHelper = new THREE.PointLightHelper(pointLight)
 const gridHelper = new THREE.GridHelper(400, 50)
 scene.add(lightHelper, gridHelper)
-    // Controls
+
+// Controls
 const controls = new OrbitControls(camera, renderer.domElement);
+
 // Stars
 function addStar() {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24);
@@ -128,6 +118,7 @@ scene.background = spaceTexture;
 // Animate
 function animate() {
     requestAnimationFrame(animate);
+  
     // Planetas y su orbita
     saturno.mesh.rotateY(0.039);
     saturno.obj.rotateY(0.0010);
@@ -147,6 +138,7 @@ function animate() {
     neptuno.obj.rotateY(0.0001);
     pluton.mesh.rotateY(0.008);
     pluton.obj.rotateY(0.00007);
+  
     // Fin de planetas y atributos de su orbita
     controls.update();
     renderer.render(scene, camera);
