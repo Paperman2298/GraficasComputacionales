@@ -52,13 +52,13 @@ const sunTex = new THREE.MeshBasicMaterial({
 const sun = new THREE.Mesh(sunGeo, sunTex);
 scene.add(sun);
 // Creacion de planetas
-const mercurio = createCircle(3.2, mercuryPath,0,28,0,0);
-const venus = createCircle(5.8, venusPath,0,44,0,0);
-const earth = createCircle(6,earthPath,0,62,0,0);
-const mars = createCircle(4,marsPath,0,78,0,0);
-const jupiter  = createCircle(12,jupiterPath,0,100,0,0);
-const neptuno  = createCircle(7,neptunePath,0,110,0,0);
-const pluton = createCircle(2.8, plutonPath,0,130,0,0);
+const mercurio = createCircle(3.2, mercuryPath, 0, 28, 0, 0);
+const venus = createCircle(5.8, venusPath, 0, 44, 0, 0);
+const earth = createCircle(6, earthPath, 0, 62, 0, 0);
+const mars = createCircle(4, marsPath, 0, 78, 0, 0);
+const jupiter = createCircle(12, jupiterPath, 0, 100, 0, 0);
+const neptuno = createCircle(7, neptunePath, 0, 110, 0, 0);
+const pluton = createCircle(2.8, plutonPath, 0, 130, 0, 0);
 const saturno = createCircle(10, saturnPath, {
     innerRadius: 10,
     outerRadius: 20,
@@ -106,9 +106,9 @@ pointLight.position.set(0, 0, 0)
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight)
 const lightHelper = new THREE.PointLightHelper(pointLight)
-const gridHelper = new THREE.GridHelper(200, 50)
+const gridHelper = new THREE.GridHelper(400, 50)
 scene.add(lightHelper, gridHelper)
-// Controls
+    // Controls
 const controls = new OrbitControls(camera, renderer.domElement);
 // Stars
 function addStar() {
@@ -117,12 +117,12 @@ function addStar() {
         color: 0xffffff
     });
     const star = new THREE.Mesh(geometry, material);
-    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
+    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(400));
     star.position.set(x, y, z);
     scene.add(star)
 }
 Array(500).fill().forEach(addStar)
-// Space
+    // Space
 const spaceTexture = new THREE.TextureLoader().load('black.jpg');
 scene.background = spaceTexture;
 // Animate
