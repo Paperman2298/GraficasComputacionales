@@ -30,6 +30,12 @@ npm run dev
 yarn install vite@latest
 ```
 
+## Entregas
+**Primer avance**
+![Primer avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance1.png?raw=true)
+**Segundo avance**
+![Segundo avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance2.png?raw=true)
+
 ## Equipo
 Joel Fernando Santillán Santana - A01634748
 
