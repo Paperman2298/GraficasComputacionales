@@ -27,7 +27,13 @@ npm run dev
 ```
 **MAC**
 ```
-yarn install vite@latest
+yarn add vite@latest
+
+npm install
+
+npm run dev
+
+ > Local: http://localhost:3000/
 ```
 
 ## Entregas
