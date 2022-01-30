@@ -39,8 +39,18 @@ npm run dev
 ## Entregas
 **Primer avance**
 ![Primer avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance1.png?raw=true)
+
+> Creación de la escena y planetas
+
 **Segundo avance**
 ![Segundo avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance2.png?raw=true)
+
+> Textura de los planetas
+
+**Tercer avance**
+![Tercer avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance3.PNG?raw=true)
+
+> Movimiento de los planetas
 
 ## Equipo
 Joel Fernando Santillán Santana - A01634748
