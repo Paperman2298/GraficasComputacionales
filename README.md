@@ -40,12 +40,12 @@ npm run dev
 **Primer avance**
 ![Primer avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance1.png?raw=true)
 
-> Creación de la escena y planetas
+> Creación de la escena
 
 **Segundo avance**
 ![Segundo avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance2.png?raw=true)
 
-> Textura de los planetas
+> Creacion de los planetas y textura de los planetas
 
 **Tercer avance**
 ![Tercer avance](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avance3.PNG?raw=true)
