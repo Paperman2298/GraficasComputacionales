@@ -1,6 +1,6 @@
 # Proyecto de Gráficas Computacionales - Galaxia en Three.js
 
-Se simulará una galaxia utilizando la librería three.js en donde se incorporarán distintos planetas con ciertos movimientos y estrellas realizadas con figuras primitivas a base de vectores.
+Simulación de una galaxia utilizando la librería three.js en donde se incorporan distintos planetas con ciertos movimientos y estrellas realizadas con figuras primitivas a base de vectores, luces y sombras además de movimiento con la incorporación de un control interactivo.
 
 ## Específicaciones del proyecto
 
