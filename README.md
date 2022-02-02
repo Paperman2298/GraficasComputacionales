@@ -52,9 +52,22 @@ npm run dev
 
 > Movimiento de los planetas
 
+**Entrega final**
+![Avance final](https://github.com/Paperman2298/GraficasComputacionales/blob/main/avancefinal.png?raw=true)
+
+> Control interactivo, luces y sombras
+
+**Enlace para probar aplicación:**
+
+https://graficas-computacionales-rftc8dws3-lvm3632.vercel.app/
+
 ## Equipo
 Joel Fernando Santillán Santana - A01634748
 
 José Alfredo Gódinez Gasca - A01274993
 
 Michel Lujano - A01636172
+
+**Sistema solar:**
+
+https://graficas-computacionales-rftc8dws3-lvm3632.vercel.app/
